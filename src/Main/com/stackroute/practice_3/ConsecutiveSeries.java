@@ -4,13 +4,10 @@ import java.util.Arrays;
 
 public class ConsecutiveSeries {
 
-    public boolean series(int n, String str[]) {
-       String numbers[]  = new String[n];
-        for (String s : str) {
-             numbers = s.split(",");
-//            System.out.println(Arrays.toString(numbers));
-        }
+    public boolean series(int n, String str) {
+       String numbers[]  = str.split(",");
 
+         Arrays.sort(numbers);
             int[] arr = new int[numbers.length];
             for (int j = 0; j < arr.length; j++) {
                 arr[j] = Integer.parseInt(numbers[j]);
