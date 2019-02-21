@@ -1,4 +1,4 @@
-//Write a program that will generate exceptions of type NegativeArraySizeException,
+package com.stackroute.practice_3;//Write a program that will generate exceptions of type NegativeArraySizeException,
 //        IndexOutOfBoundsException, NullPointerException. Record the catching of each exception by
 //        displaying the message stored in the exception object.package com.stackroute.practice_3;
 
