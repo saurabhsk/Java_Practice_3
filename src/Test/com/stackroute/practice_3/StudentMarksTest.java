@@ -22,21 +22,21 @@ public class StudentMarksTest {
     public void marks() {
         studentMarks = new StudentMarks(4, new int[]{10,20,30,40});
         boolean expected = true;
-        boolean actual = studentMarks.Marks();
+        boolean actual = studentMarks.marks();
         assertEquals(expected,actual);
     }
     @Test
     public void stud_marks() {
         studentMarks = new StudentMarks(4, new int[]{10,451,30,40});
         boolean expected = true;
-        boolean actual = studentMarks.Marks();
+        boolean actual = studentMarks.marks();
         assertEquals(expected,actual);
     }
     @Test
     public void stud_marksOf() {
         studentMarks = new StudentMarks(4, new int[]{10,100,30,40,12});
         boolean expected = true;
-        boolean actual = studentMarks.Marks();
+        boolean actual = studentMarks.marks();
         assertEquals(expected,actual);
     }
 }

@@ -30,4 +30,10 @@ public class ConsecutiveSeriesTest {
         boolean actual = consecutiveSeries.series(6,"1,1,3,4,5,6");
         assertEquals(expected,actual);
     }
+    @Test
+    public void IsseriesOf() {
+        boolean expected = false;
+        boolean actual = consecutiveSeries.series(6,"1,1,1,1,1,1");
+        assertEquals(expected,actual);
+    }
 }

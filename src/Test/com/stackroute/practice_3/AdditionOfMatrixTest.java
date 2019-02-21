@@ -32,4 +32,11 @@ public class AdditionOfMatrixTest {
         boolean actual = additionOfMatrix.sumOfMatrix();
         assertEquals(expected,actual);
     }
+    @Test
+    public void isSumOfMatrixOf() {
+        additionOfMatrix = new AdditionOfMatrix(2,3, new int[][]{{0,0,0},{3,3,6}},new int[][]{{1,2,3},{0,0,0}});
+        boolean expected = true;
+        boolean actual = additionOfMatrix.sumOfMatrix();
+        assertEquals(expected,actual);
+    }
 }

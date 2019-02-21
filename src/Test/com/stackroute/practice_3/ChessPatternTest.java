@@ -33,4 +33,16 @@ public class ChessPatternTest {
         String actual = chessPattern.pattern(8,8);
         assertEquals(expected,actual);
     }
+    @Test
+    public void patternOf() {
+        String expected= "WW|BB|WW|BB|WW|BB|WW|BB|\n"+
+                "BB|WW|BB|WW|BB|WW|BB|WW|\n" +
+                "WW|BB|WW|BB|WW|BB|WW|BB|\n" +
+                "BB|WW|BB|WW|BB|WW|BB|WW|\n" +
+                "WW|BB|WW|BB|WW|BB|WW|BB|\n" +
+                "BB|WW|BB|WW|BB|WW|BB|WW|";
+
+        String actual = chessPattern.pattern(6,8);
+        assertEquals(expected,actual);
+    }
 }
